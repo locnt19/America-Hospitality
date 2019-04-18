@@ -1,0 +1,73 @@
+.news
+	.col-lg-8
+		figure
+			position: relative
+			img
+				width: 100%
+				max-height: 522px
+			figcaption
+				position: absolute
+				bottom: 40px
+				color: #fff
+				left: 50px
+				h3
+					+line(1)
+					+fontC(30px,bold)
+					color: rgb(255, 255, 255)
+					text-transform: uppercase
+	.col-lg-4
+		figure
+			margin-bottom: 15px
+			position: relative
+			img
+				width: 100%
+				max-height: 252px
+			figcaption
+				position: absolute
+				bottom: 25px
+				color: #fff
+				left: 30px
+				h3
+					+line(1)
+					+fontC(16px,bold)
+					color: rgb(255, 255, 255)
+					text-transform: uppercase
+.news-items
+	padding-top: 85px
+	.col-lg-8
+		.col-md-6
+			figure
+				figcaption
+					position: inherit
+					padding-top: 25px
+					color: #000000
+					bottom: auto
+					left: auto
+					padding-bottom: 45px
+					span
+						display: inline-block
+						padding-bottom: 3px
+					h3
+						+line(3)
+						+fontC(16px,bold)
+						color: #000
+						text-transform: uppercase
+	.col-lg-4
+		nav
+			background: rgb(242, 242, 242)
+			ul
+				list-style-type: none
+				.mdi-facebook
+					+mtrl(f20c)
+				.mdi-linkedin
+					+mtrl(f33b)
+				.mdi-google-plus
+					+mtrl(f2bd)
+				.mdi-instagram
+					+mtrl(f2fe)
+				.mdi-youtube
+					+mtrl(f5c3)
+				.mdi-pinterest
+					+mtrl(f407)
+				.mdi-twitter
+					+mtrl(f544)
