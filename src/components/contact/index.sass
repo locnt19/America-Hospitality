@@ -1,0 +1,50 @@
+.contact
+	margin-top: -60px
+	padding-bottom: 200px
+	.contact-item 
+		display: flex
+		justify-content: center
+		.information 
+			padding-top: 60px
+			background-color: rgb(235, 235, 235)
+			h3 
+				font-size: 40px
+				line-height: 50px
+				font-family: "Cinzel"
+				color: rgb(55, 55, 55)
+				font-weight: bold
+				padding-left: 10px
+				&:first-child 
+					margin-left: -35px
+			.conten 
+				padding: 40px 60px
+				p 
+					font-size: 16px
+					font-family: "Titillium Web"
+					color: rgb(102, 102, 102)
+				span 
+					font-weight: 600
+					color: #666666
+				a 
+					text-decoration: underline !important
+	@media (max-width: 991.98px) 
+		.contact-item 
+			justify-content: flex-start 
+			+ .contact-item 
+				margin-top: 30px
+				justify-content: flex-end
+	@media (max-width: 767.98px) 
+		.contact-item 
+			.information 
+				.conten 
+					padding: 40px 60px 40px 40px 
+	@media (max-width: 576px)
+		.contact-item 
+			.information 
+				h3 
+					&:first-child 
+						margin-left: 0
+				.conten 
+					padding: 30px
+.map 
+	

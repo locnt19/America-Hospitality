@@ -1,1 +1,146 @@
 .introduce
+	margin-top: -60px
+	padding-bottom: 300px
+	.introduce-item
+		display: flex
+		align-items: flex-end
+		justify-content: center
+	.content 
+		.content-top 
+			margin-left: -120px
+			padding-bottom: 90px
+			padding-right: 280px
+			h3 
+				font-size: 30px
+				font-family: "Cinzel"
+				color: rgb(55, 55, 55)
+				font-weight: bold
+		.content-bottom
+			padding-left: 210px
+			padding-right: 90px
+			p
+				font-size: 16px
+				font-family: "Titillium Web"
+				color: rgb(102, 102, 102)
+	@media (max-width: 1200px)
+		.content 
+			.content-top 
+				padding-bottom: 30px
+				padding-right: 70px 
+				h3 
+					font-size: 25px 
+			.content-bottom 
+				padding: 0 40px 
+				p 
+					font-size: 15px
+	@media (max-width: 991.98px)
+		padding-bottom: 60px
+		.introduce-item
+			text-align: center
+			+ .introduce-item
+				margin-top: 20px
+		.content 
+			.content-top 
+				margin-left: 0
+				padding: 0 
+				h3 
+					font-size: 25px 
+			.content-bottom 
+				padding: 20px 0 0 0 
+				p 
+					font-size: 15px
+	@media (max-width: 767.98px) 
+		.content 
+			.content-top  
+				h3 
+					font-size: 20px 
+			.content-bottom 
+				padding: 20px 0 0 0 
+				p 
+					font-size: 15px
+.history 
+	background: url(../img/about/banner-1.jpg)
+	min-height: 760px
+	background-repeat: no-repeat
+	background-size: cover
+	.container 
+		position: relative
+	.swiper-container
+		top: -150px
+		left: 50%
+		transform: translateX(-50%)
+		.swiper-wrapper
+			text-align: center
+			.swiper-slide 
+				a 
+					display: block 
+					h3 
+						position: relative
+						padding: 70px 0 50px 0
+						font-size: 50px
+						font-weight: 400
+						font-family: "Cinzel"
+						color: rgb(85, 85, 85)
+						text-align: center
+						&:before 
+							position: absolute
+							width: 88px
+							height: 88px
+							border: 5px solid #fff
+							content: ""
+							top: 55%
+							left: 50%
+							transform: translate(-50%,-50%) rotate(45deg)
+							z-index: -1
+					h2 
+						font-size: 24px
+						font-family: "Cinzel"
+						color: rgb(55, 55, 55)
+						font-weight: bold
+					p 
+						font-size: 16px
+						font-family: "Titillium Web"
+						color: rgb(102, 102, 102)
+	.slide-navigation
+		position: absolute
+		top: 25%
+		width: 100%
+		display: flex
+		justify-content: space-between
+		// transform: translateY(-50%)
+		left: 0
+		i 
+			z-index: 3
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 46px
+			height: 46px
+			&:hover 
+				border-width: 2px
+				border-color: rgb(250, 17, 38)
+				border-style: solid
+				width: 46px
+				height: 46px
+				color: rgb(250, 17, 38)
+	@media (max-width: 991.98px) 
+		min-height: auto
+		padding: 60px 0
+		.swiper-container
+			top: 0
+			left: 0
+			transform: translateX(0)
+	@media (max-width: 767.98px) 
+		.slide-navigation
+			top: 50%
+			i
+				border-width: 2px
+				border-color: rgb(250, 17, 38)
+				border-style: solid
+				width: 46px
+				height: 46px
+				color: rgb(250, 17, 38)
+				&.lnr-chevron-left
+					margin-left: 15px
+				&.lnr-chevron-right
+					margin-right: 15px
