@@ -311,7 +311,7 @@ template {
 
 @media (min-width: 992px) {
 	.container {
-		max-width: 960px;
+		max-width: 1200px;
 	}
 }
 

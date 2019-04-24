@@ -10,4 +10,13 @@ $(document).ready(function () {
 			nextEl: '.history .lnr.lnr-chevron-right'
 		}
 	})
+	// Product Tab
+	$('.map nav a').on('click', function (e) {
+		e.preventDefault()
+		$(this).addClass('active')
+		$('.map nav a').not(this).removeClass('active')
+		$('.map .pcontent').not(target).hide()
+		var target = $(this).attr('href')
+		$(target).fadeIn()
+	})
 });

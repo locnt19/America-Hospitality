@@ -1,0 +1,172 @@
+.whoweare-main 
+	padding-bottom: 200px
+	.content
+		position: relative
+		max-width: 1200px
+		margin: auto
+		.full-content
+			text-align: center
+			position: relative
+			z-index: 1
+			margin: auto
+			max-width: 616px
+			max-height: 616px
+			padding: 244px 125px 220px 125px
+			h2 
+				font-size: 40px
+				font-family: "Minion Pro"
+				color: rgb(51, 51, 51)
+			p
+				font-size: 16px
+				font-family: "Titillium Web"
+				color: rgb(51, 51, 51)
+			&:before 
+				content: ''
+				position: absolute
+				top: 50% 
+				left: 50% 
+				width: 100%
+				height: 100%
+				background: #ebebeb
+				transform: translate(-50%,-50%) rotate(45deg)
+				z-index: -1
+			&:after 
+				content: ''
+				position: absolute
+				top: 50% 
+				left: 50% 
+				width: 97%
+				height: 97%
+				background: #ffffff
+				transform: translate(-50%,-50%) rotate(45deg)
+				z-index: -1
+			
+		.img
+			z-index: 3
+			position: absolute
+			width: 314px
+			height: 314px
+			-webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
+			clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
+			background: #ebebeb
+			top: 50%
+			transform: translatey(-50%)
+			&:last-child 
+				right: 0
+			&:before 
+				content: ''
+				position: absolute
+				top: 50% 
+				left: 50% 
+				width: 303px
+				height: 303px
+				background: url("../img/whoweare/w-8.png")
+				background-position: center 
+				background-repeat: no-repeat
+				transform: translate(-50%,-50%)
+				z-index: -1
+				-webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
+				clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
+	@media (max-width: 991.98px) 
+		padding-bottom: 100px
+		.content 
+			.full-content
+				max-width: 450px
+				max-height: 450px
+				padding: 123px 70px
+			.img 
+				transform: translate(0)
+				top: -25%
+				&:last-child 
+					top: 55%
+	@media (max-width: 768px)
+		.content 
+			.full-content
+				max-width: 350px
+				max-height: 350px
+				padding: 73px 35px
+			.img 
+				top: 0
+				width: 250px
+				height: 250px
+				top: -50%
+				&:before 
+					width: 244px
+					height: 244px
+				&:last-child 
+					top: 78%
+	@media (max-width: 576px)
+		margin-top: -60px
+		.content 
+			.full-content
+				padding: 31px 13px
+				&:before, &:after 
+					transform: translate(-50%,-50%) rotate(0)
+			.img 
+				position: relative
+				&:last-child 
+					margin-left: auto
+.design 
+	.nav-whoweare 
+		padding-bottom: 80px
+		nav 
+			display: flex
+			justify-content: center
+			align-items: center
+			a 
+				font-size: 16px
+				font-family: "Cinzel"
+				color: #999999
+				text-transform: uppercase 
+				padding: 0 16px
+				&.active, &:hover 
+					color: #202020
+	.nav-main
+		background: url("../img/banner/whoweare.png")
+		min-height: 566px
+		padding: 80px 55px
+		margin-top: 80px
+		.item 
+			margin-top: -160px
+			display: flex
+			align-items: center
+			&:last-child
+				margin-bottom: -160px
+			.img, .content
+				flex: 0 0 50%
+				max-width: 50%
+			.content 
+				h2 
+					font-size: 40px
+					font-family: "Cinzel"
+					color: rgb(51, 51, 51)
+					font-weight: bold
+				p 
+					font-size: 16px
+					font-family: "Titillium Web"
+					color: rgb(51, 51, 51)
+		.item1 
+			margin-bottom: -160px
+			display: flex
+			flex-direction: row-reverse
+			align-items: center
+			.img, .content
+				flex: 0 0 50%
+				max-width: 50%
+			.content 
+				h2 
+					font-size: 40px
+					font-family: "Cinzel"
+					color: rgb(51, 51, 51)
+					font-weight: bold
+				p 
+					font-size: 16px
+					font-family: "Titillium Web"
+					color: rgb(51, 51, 51)
+	@media (max-width: 576px)
+		.nav-whoweare 
+			nav 
+				a 
+					padding: 0 6px
+					font-size: 12px
+					
